@@ -1,47 +1,42 @@
-# Modern.js Package
+# Fake Install
 
-## Setup
+A utility module for simulating the installation of npm packages.
 
-Install the dependencies:
+## Installation
+
+You can install this package using npm:
 
 ```bash
-pnpm run install
+npm install fake-install
 ```
 
-## Get Started
+## Usage
 
-Run and debug the module:
+In your Node.js project, you can use this module to simulate the installation of an npm package. Here's how you can use it:
 
-```
-pnpm run dev
-```
+```javascript
+const { fakeInstall } = require('fake-install');
 
-Run test cases:
+const packageName = 'example-package'; // Replace with the name of the package you want to simulate the installation of
+const targetPath = process.cwd(); // You can specify the target directory where the package should be installed
 
-```
-pnpm run test
-```
-
-Build the module for production:
-
-```
-pnpm run build
+try {
+  fakeInstall(packageName, targetPath);
+  console.log(`Successfully simulated installation of '${packageName}'`);
+} catch (error) {
+  console.error(`Error: ${error.message}`);
+}
 ```
 
-Enable optional features:
+This code will simulate the installation of the specified package in the target directory.
 
-```
-pnpm run new
-```
+## API
 
-Other commands:
+### `fakeInstall(packageName: string, targetPath: string = process.cwd()): void`
 
-```
-pnpm run lint         # Lint and fix source files
-pnpm run change       # Add a new changeset
-pnpm run bump         # Update version and changelog via changeset
-pnpm run release      # Release the package
+- `packageName` (string): The name of the npm package you want to simulate the installation of.
+- `targetPath` (string, optional): The target directory where the package should be installed. Defaults to the current working directory.
 
-```
+## License
 
-For more information, see the [Modern.js Module documentation](https://modernjs.dev/module-tools/en).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
