@@ -33,20 +33,19 @@
     "dist",
     "CHANGELOG.md"
   ],
-  "dependencies": {},
-  "peerDependencies": {},
   "devDependencies": {
-    "@modern-js/module-tools": "2.34.0",
-    "@modern-js/eslint-config": "2.34.0",
-    "@modern-js/tsconfig": "2.34.0",
+    "@changesets/cli": "^2.26.2",
     "@modern-js-app/eslint-config": "2.34.0",
-    "typescript": "~5.0.4",
+    "@modern-js/eslint-config": "2.34.0",
+    "@modern-js/module-tools": "2.34.0",
+    "@modern-js/tsconfig": "2.34.0",
     "@types/jest": "~29.2.4",
     "@types/node": "~16.11.7",
     "@types/react": "~18.0.26",
+    "husky": "~8.0.1",
     "lint-staged": "~13.1.0",
     "prettier": "~2.8.1",
-    "husky": "~8.0.1"
+    "typescript": "~5.0.4"
   },
   "sideEffects": [],
   "publishConfig": {
