@@ -35,9 +35,6 @@ devDependencies:
   prettier:
     specifier: ~2.8.1
     version: 2.8.1
-  rimraf:
-    specifier: ~3.0.2
-    version: 3.0.2
   typescript:
     specifier: ~5.0.4
     version: 5.0.4
@@ -6821,3 +6818,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
