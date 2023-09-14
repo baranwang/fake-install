@@ -1,5 +1,0 @@
----
-'fake-install': major
----
-
-initialization
