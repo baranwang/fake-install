@@ -17,7 +17,8 @@
     "gen-release-note": "modern gen-release-note",
     "release": "modern release",
     "new": "modern new",
-    "upgrade": "modern upgrade"
+    "upgrade": "modern upgrade",
+    "prepublishOnly": "modern build"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
@@ -27,6 +28,10 @@
   "eslintIgnore": [
     "node_modules/",
     "dist/"
+  ],
+  "files": [
+    "dist",
+    "CHANGELOG.md"
   ],
   "dependencies": {},
   "peerDependencies": {},
